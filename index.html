@@ -5,31 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Page</title>
   <style>
-    /* 您可以在此处自定义照片的样式，例如大小或圆角 */
+    /* 定义图片样式：左对齐，设置大小和边距 */
     img {
-       float: left; /* 照片靠左对齐 */
+      float: left; /* 照片靠左对齐 */
       max-width: 200px;
-      border-radius: 50%;
-      margin: 30px 20px 20px 0px; /* 调整照片与文字之间的间距 */
+      border-radius: 50%; /* 圆角效果 */
+      margin: 20px 30px 20px 0px; /* 上右下左的边距调整 */
+    }
+
+    /* 增加 h1 和下面内容的间距 */
+    h1 {
+      margin-bottom: 40px; /* 调整标题和后面文字的距离 */
+    }
+
+    /* 清除浮动的样式，避免布局问题 */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
     }
   </style>
 </head>
 <body>
+
   <h1>Welcome to Shangzhi's Personal Website</h1>
 
-  <!-- 在这里插入照片 -->
-  <img src="Lu shangzhi.jpg" alt="Shangzhi Lu's photo">
+  <!-- 个人简介部分，使用 clearfix 包裹照片和文字 -->
+  <div class="clearfix">
+    <!-- 插入照片 -->
+    <img src="Lu shangzhi.jpg" alt="Shangzhi Lu's photo">
 
-  <!-- 个人简介部分开始 -->
-  <h2>About Me</h2>
-  <p>Hi, I'm Shangzhi Lu! You can call me Lubury. I am currently a new PhD student studying Applied Psychology at The Chinese University of Hong Kong, Shenzhen.</p>
+    <!-- 个人简介部分开始 -->
+    <h2>About Me</h2>
+    <p>Hi, I'm Shangzhi Lu! You can call me Lubury. I am currently a new PhD student studying Applied Psychology at The Chinese University of Hong Kong, Shenzhen.</p>
 
-  <p>Before pursuing my PhD degree, I worked for one year at the Academy of Social Sciences in my hometown. Additionally, I earned my bachelor's degree in Psychology from Northwest Normal University and completed my master's degree at CUHK-SZ.</p>
+    <p>Before pursuing my PhD degree, I worked for one year at the Academy of Social Sciences in my hometown.</p>
 
-  <p>I am interested in Educational Intervention and Meta-science. Recently, I have been focused on the impact of socioeconomic factors on the Critical Thinking of high school students. Besides, I am still working with my master's advisor on a tutorial paper about R data visualization.</p>
+    <p>I am interested in Educational Intervention and Meta-science. Recently, I have been focused on the impact of socioeconomic factors on the Critical Thinking of high school students. Besides, I am still working with my master's advisor on a tutorial paper about R data visualization.</p>
 
-  <p>In my spare time, I enjoy collecting NBA Panini trading cards and playing NBA 2K games. I also really enjoy watching classical military TV series like <em>士兵突击</em>, <em>沙场点兵</em>, and <em>亮剑</em>.</p>
-  <!-- 个人简介部分结束 -->
+    <p>In my spare time, I enjoy collecting NBA Panini trading cards and playing NBA 2K games. I also really enjoy watching classical military TV series like <em>士兵突击</em>, <em>沙场点兵</em>, and <em>亮剑</em>.</p>
+    <!-- 个人简介部分结束 -->
+  </div>
 
 </body>
 </html>
