@@ -28,15 +28,19 @@
     /* 导引页部分样式 */
     .navigation {
       margin-top: 20px; /* 与About部分保持一定距离 */
-      text-align: center; /* 中央对齐 */
       font-size: 18px; /* 导引文字大小 */
+      text-align: center; /* 中央对齐 */
     }
 
     .navigation a {
       display: inline-block;
-      margin-right: 20px; /* 导引之间的间距 */
+      margin-right: 40px; /* 增加导引之间的间距 */
       text-decoration: none; /* 去掉下划线 */
       color: #007bff; /* 链接颜色 */
+    }
+
+    .navigation a:last-child {
+      margin-right: 0; /* 最后一个链接不需要右边距 */
     }
   </style>
 </head>
