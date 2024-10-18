@@ -55,6 +55,18 @@
       text-decoration: none; /* 去掉下划线 */
       color: #007bff; /* 链接颜色 */
     }
+
+    /* 对齐 E-mail 和 Google Scholar */
+    .contact-info div {
+      display: flex; /* 使用弹性布局 */
+      justify-content: center; /* 中央对齐 */
+      margin: 10px 0; /* 上下边距 */
+    }
+
+    .contact-info div span {
+      margin-right: 10px; /* 增加标题与链接之间的距离 */
+      font-weight: bold; /* 加粗标题 */
+    }
   </style>
 </head>
 <body>
@@ -79,8 +91,8 @@
 
     <p>Before pursuing my PhD degree, I worked for one year at the Academy of Social Sciences in my hometown.</p>
 
-    <p>I am interested in Educational Intervention and Meta-science. Recently, I have been focused on the impact of socioeconomic factors on the critivity of high school students. 
-      
+    <p>I am interested in Educational Intervention and Meta-science. Recently, I have been focused on the impact of socioeconomic factors on the critivity of high school students. </p>
+
     <p>Besides, I am still working with my master's advisor on a tutorial paper about R data visualization.</p>
 
     <p>In my spare time, I enjoy collecting NBA Panini trading cards and playing NBA 2K games. I also really enjoy watching classical military TV series like <em>士兵突击</em>, <em>沙场点兵</em>,  <em>少帅</em> and <em>亮剑</em>.</p>
@@ -89,15 +101,14 @@
 
   <!-- 联系信息部分 -->
   <div class="contact-info">
-    <p>
-      E-mail: <a href="mailto:shangzhilu@link.cuhk.edu.cn">shangzhilu@link.cuhk.edu.cn</a>
-    </p>
-    <p>
-      Google Scholar: 
-      <a href="https://scholar.google.com/citations?user=IJdOsy0AAAAJ&hl=zh-CN" target="_blank">
-        Personal Profile
-      </a>
-    </p>
+    <div>
+      <span>E-mail:</span>
+      <a href="mailto:shangzhilu@link.cuhk.edu.cn">shangzhilu@link.cuhk.edu.cn</a>
+    </div>
+    <div>
+      <span>Google Scholar:</span>
+      <a href="https://scholar.google.com/citations?user=IJdOsy0AAAAJ&hl=zh-CN" target="_blank">Personal Profile</a>
+    </div>
   </div>
 
 </body>
