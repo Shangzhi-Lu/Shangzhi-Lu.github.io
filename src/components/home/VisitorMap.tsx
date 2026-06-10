@@ -27,12 +27,14 @@ export default function VisitorMap() {
           target="_blank"
           rel="noopener noreferrer"
           title={isChinese ? '查看访客统计' : 'View visitor statistics'}
-          className="inline-block max-w-full"
+          className="block w-full max-w-xl"
         >
           <img
             src={MAP_IMAGE_URL}
             alt={isChinese ? '访客地理分布地图' : 'Visitor location map'}
-            className="h-auto max-w-full rounded-lg border border-neutral-200 bg-white p-3 dark:border-neutral-800"
+             className="h-auto w-full rounded-lg border border-neutral-200 bg-white p-3 dark:border-neutral-800"
+          />
+          />
           />
         </a>
       </div>
