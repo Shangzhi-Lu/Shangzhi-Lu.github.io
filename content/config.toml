@@ -28,37 +28,38 @@ enable_likes = false
 enable_one_page_mode = false
 
 [i18n]
-enabled = false
-locales = ["en"]
+enabled = true
+locales = ["en", "zh"]
 default_locale = "en"
-mode = "fixed"
+mode = "auto"
 fixed_locale = "en"
-persist = false
-switcher = false
+persist = true
+switcher = true
 
 [i18n.labels]
 en = "English"
+zh = "中文"
 
 [[navigation]]
-title = "关于我"
+title = "About"
 type = "page"
 target = "about"
 href = "/"
 
 [[navigation]]
-title = "发表成果"
+title = "Publications"
 type = "page"
 target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "摄影"
+title = "Photography"
 type = "page"
 target = "photography"
 href = "/photography"
 
 [[navigation]]
-title = "简历"
+title = "CV"
 type = "page"
 target = "cv"
 href = "/cv"
