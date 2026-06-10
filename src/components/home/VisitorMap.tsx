@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 const MAP_ID = '5I7x8Gw6L-PNnJE3RfBe74OUqvDm0BT4K1J-b57Ct9Q';
-const MAP_IMAGE_URL = `https://mapmyvisitors.com/map.png?cl=ffffff&w=a&t=n&d=${MAP_ID}`;
+const MAP_IMAGE_URL = `https://mapmyvisitors.com/map.png?cl=ffffff&w=600&t=n&d=${MAP_ID}`;
 const MAP_STATS_URL = 'https://mapmyvisitors.com/web/1c5at';
 
 export default function VisitorMap() {
@@ -27,7 +27,7 @@ export default function VisitorMap() {
           target="_blank"
           rel="noopener noreferrer"
           title={isChinese ? '查看访客统计' : 'View visitor statistics'}
-          className="block w-full max-w-xl"
+          className="block w-full max-w-[600px]"
         >
           <img
             src={MAP_IMAGE_URL}
