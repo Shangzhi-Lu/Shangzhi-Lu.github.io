@@ -21,13 +21,21 @@ export default function VisitorMap() {
       <h2 id="visitor-map-title" className="text-2xl font-serif font-bold text-primary mb-4">
         {isChinese ? '访客地图' : 'Visitor Map'}
       </h2>
-      <a href={MAP_STATS_URL} target="_blank" rel="noopener noreferrer" title={isChinese ? '查看访客统计' : 'View visitor statistics'}>
-        <img
-          src={MAP_IMAGE_URL}
-          alt={isChinese ? '访客地理分布地图' : 'Visitor location map'}
-          className="w-full rounded-lg border border-neutral-200 bg-white p-3 dark:border-neutral-800"
-        />
-      </a>
+      <div className="flex justify-center">
+        <a
+          href={MAP_STATS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={isChinese ? '查看访客统计' : 'View visitor statistics'}
+          className="inline-block max-w-full"
+        >
+          <img
+            src={MAP_IMAGE_URL}
+            alt={isChinese ? '访客地理分布地图' : 'Visitor location map'}
+            className="h-auto max-w-full rounded-lg border border-neutral-200 bg-white p-3 dark:border-neutral-800"
+          />
+        </a>
+      </div>
       <p className="mt-2 text-xs text-neutral-500">
         {isChinese
           ? '地图根据访客 IP 显示大致地区，不代表精确位置。'
