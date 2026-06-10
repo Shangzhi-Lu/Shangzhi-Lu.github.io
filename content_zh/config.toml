@@ -1,0 +1,65 @@
+[site]
+title = "卢尚智"
+description = "卢尚智的个人学术主页，香港中文大学（深圳）应用心理学博士候选人。"
+favicon = "/favicon.svg"
+last_updated = "2026年6月10日"
+
+[author]
+name = "卢尚智"
+title = "应用心理学博士候选人"
+institution = "香港中文大学（深圳）"
+avatar = "/bio.jpg"
+
+[social]
+email = "shangzhilu@link.cuhk.edu.cn"
+location = "中国深圳"
+location_url = "https://maps.google.com/?q=The%20Chinese%20University%20of%20Hong%20Kong%2C%20Shenzhen"
+location_details = [
+  "香港中文大学（深圳）",
+  "中国深圳"
+]
+google_scholar = "https://scholar.google.com/citations?user=IJdOsy0AAAAJ&hl=zh-CN"
+orcid = ""
+github = "https://github.com/Shangzhi-Lu"
+linkedin = ""
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["en", "zh"]
+default_locale = "en"
+mode = "auto"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+en = "English"
+zh = "中文"
+
+[[navigation]]
+title = "关于"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "发表成果"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "摄影"
+type = "page"
+target = "photography"
+href = "/photography"
+
+[[navigation]]
+title = "简历"
+type = "page"
+target = "cv"
+href = "/cv"

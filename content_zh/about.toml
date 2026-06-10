@@ -1,0 +1,25 @@
+type = "about"
+title = "关于"
+
+[profile]
+research_interests = [
+  "青少年心理健康",
+  "休息羞耻感",
+  "积极心理学与幸福感",
+  "心理丰富性",
+  "教育心理学",
+  "心理学元科学"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "关于"
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "精选成果"
+filter = "selected"
+limit = 3

@@ -1,0 +1,4 @@
+type = "publication"
+title = "发表成果"
+description = "期刊论文、预印本、会议报告与进行中的研究。"
+source = "publications.bib"

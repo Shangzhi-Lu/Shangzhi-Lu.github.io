@@ -1,0 +1,10 @@
+type = "card"
+title = "摄影"
+description = "收藏与视觉记录的小角落。"
+
+[[items]]
+title = "Panini 球星卡收藏"
+subtitle = "NBA 与中国传奇球员签字卡"
+content = "Gala 系列与 Prizm 系列的部分收藏。"
+image = "/panini-photo-1.jpg"
+tags = ["NBA", "Panini", "球星卡"]
