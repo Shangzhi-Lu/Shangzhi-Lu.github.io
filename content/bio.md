@@ -1,7 +1,5 @@
 Hi, I'm Shangzhi Lu. I am currently a PhD candidate in Applied Psychology at The Chinese University of Hong Kong, Shenzhen.
 
-Before pursuing my PhD degree, I worked for one year at the Academy of Social Sciences in my hometown.
-
 My current research interests span four interconnected areas.
 
 First, I study youth mental health and positive development. My recent work examines how adverse childhood experiences influence adolescents' social-emotional competencies and life satisfaction, alongside topics such as rest intolerance, academic autonomy, and the authentic inner compass. I primarily use burst and longitudinal survey designs, together with advanced psychometric and statistical methods including machine learning, time-series dynamic network analysis, latent growth modeling, and dynamic structural equation modeling. Through this work, I aim to understand how long-term developmental patterns and short-term fluctuations dynamically interact in adolescent mental health and wellbeing.
