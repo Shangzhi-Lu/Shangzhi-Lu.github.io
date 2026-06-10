@@ -34,6 +34,11 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
 
   const currentLocale = i18n.locales.includes(locale) ? locale : i18n.defaultLocale;
   const currentLabel = i18n.labels[currentLocale] || currentLocale;
+  const isTwoLocaleToggle = i18n.locales.length === 2;
+  const nextLocale = isTwoLocaleToggle
+    ? i18n.locales.find((localeOption) => localeOption !== currentLocale) || i18n.defaultLocale
+    : currentLocale;
+  const nextLabel = i18n.labels[nextLocale] || nextLocale;
 
   return (
     <div className="relative">
@@ -42,7 +47,13 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
         whileTap={{ scale: 0.95 }}
         type="button"
         onMouseDown={(e) => e.preventDefault()}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          if (isTwoLocaleToggle) {
+            setLocale(nextLocale);
+            return;
+          }
+          setIsOpen(!isOpen);
+        }}
         className={cn(
           'flex items-center justify-center gap-1 px-2 h-10 rounded-lg',
           'border border-neutral-200 bg-background hover:bg-neutral-50',
@@ -50,14 +61,14 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
           'transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50',
           'text-neutral-600 hover:text-primary dark:text-neutral-400 dark:hover:text-white'
         )}
-        title={currentLabel}
+        title={isTwoLocaleToggle ? `Switch to ${nextLabel}` : currentLabel}
       >
         <LanguageIcon className="h-4 w-4" />
         <span className="text-xs font-medium">{currentLabel}</span>
-        <ChevronDownIcon className="h-3.5 w-3.5" />
+        {!isTwoLocaleToggle && <ChevronDownIcon className="h-3.5 w-3.5" />}
       </motion.button>
 
-      {isOpen && (
+      {!isTwoLocaleToggle && isOpen && (
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: -10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -93,7 +104,7 @@ export default function LanguageToggle({ i18n }: LanguageToggleProps) {
         </motion.div>
       )}
 
-      {isOpen && (
+      {!isTwoLocaleToggle && isOpen && (
         <div
           className="fixed inset-0 z-40"
           onClick={() => setIsOpen(false)}
