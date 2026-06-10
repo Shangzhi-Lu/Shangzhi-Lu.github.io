@@ -1,0 +1,7 @@
+type = "card"
+title = "Awards"
+description = "Awards and honors can be added here later."
+
+[[items]]
+title = "To be updated"
+content = "This section is ready for future awards and honors."

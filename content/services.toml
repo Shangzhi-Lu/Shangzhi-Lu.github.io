@@ -1,0 +1,7 @@
+type = "card"
+title = "Services"
+description = "Professional services can be added here later."
+
+[[items]]
+title = "To be updated"
+content = "This section is ready for future professional service records."

@@ -1,0 +1,4 @@
+type = "text"
+title = "CV"
+description = "A downloadable PDF version is available below."
+source = "cv.md"

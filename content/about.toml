@@ -1,0 +1,25 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Youth mental health",
+  "Rest intolerance",
+  "Positive psychology and wellbeing",
+  "Psychological richness",
+  "Educational psychology",
+  "Meta-science in psychology"
+]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "Selected Publications"
+filter = "selected"
+limit = 3

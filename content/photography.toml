@@ -1,0 +1,10 @@
+type = "card"
+title = "Photography"
+description = "A small corner for collections and visual notes."
+
+[[items]]
+title = "Panini Trading Card Collection"
+subtitle = "NBA and Chinese legend player autographed cards"
+content = "Partial collection from Gala and Prizm series."
+image = "/panini-photo-1.jpg"
+tags = ["NBA", "Panini", "Trading cards"]

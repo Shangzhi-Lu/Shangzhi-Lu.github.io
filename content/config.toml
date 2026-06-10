@@ -1,0 +1,64 @@
+[site]
+title = "Shangzhi Lu"
+description = "Personal academic website of Shangzhi Lu, PhD candidate in Applied Psychology at The Chinese University of Hong Kong, Shenzhen."
+favicon = "/favicon.svg"
+last_updated = "June 10, 2026"
+
+[author]
+name = "Shangzhi Lu"
+title = "PhD Candidate in Applied Psychology"
+institution = "The Chinese University of Hong Kong, Shenzhen"
+avatar = "/bio.jpg"
+
+[social]
+email = "shangzhilu@link.cuhk.edu.cn"
+location = "Shenzhen, China"
+location_url = "https://maps.google.com/?q=The%20Chinese%20University%20of%20Hong%20Kong%2C%20Shenzhen"
+location_details = [
+  "The Chinese University of Hong Kong, Shenzhen",
+  "Shenzhen, China"
+]
+google_scholar = "https://scholar.google.com/citations?user=IJdOsy0AAAAJ&hl=zh-CN"
+orcid = ""
+github = "https://github.com/Shangzhi-Lu"
+linkedin = ""
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+
+[i18n.labels]
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Photography"
+type = "page"
+target = "photography"
+href = "/photography"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"
